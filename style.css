@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+input:focus,textarea:focus {
+    outline:none;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin:0 auto;
+    margin-top: 10vh;
+    height: 80vh;
+    background-color: antiquewhite;
+}
+
+.chat__container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    max-width: 400px;
+    height: 70vh ;
+}
+.chat__messages{
+    overflow-y: scroll;
+    background-color: rgb(224, 252, 238);
+    display: flex;
+    width: 400px;
+    
+    height: calc(100% - 40px ) ;
+    flex-direction: column-reverse;
+}
+.chat__messages::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.chat__messages::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 150, 155);
+}
+#chat__form{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+}
+.chat__input{
+resize: none;
+font-size: 16px;
+    width: 100%;
+    border: none;
+}
+.chat__input::-webkit-scrollbar{
+    display: none;
+}
+
+.send_btn{
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(41, 87, 212);
+    margin-left: 10px;
+}
+.chat__message_user,.chat__message_not_user{
+    padding: 0 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px 0;
+}
+.message__profile{
+    padding: 5px 15px;
+    border-radius:20px;
+    color: white;
+    background-color: rgb(5, 144, 168);
+}
+.chat__message_not_user{
+flex-direction: row;
+}
+.chat__message_not_user .message__profile{
+    background-color: rgb(0, 0, 0);
+}
+.chat__message_not_user  .message__text{
+    background-color: white;
+    padding: 10px;
+    border-radius:0  0px 15px 0 ;
+}
+.chat__message_user  .message__text{
+    background-color: white;
+    padding: 10px;
+    border-radius:0  0px 0 15px ;
+  
+}

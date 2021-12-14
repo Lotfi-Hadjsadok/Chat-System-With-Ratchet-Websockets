@@ -1,0 +1,17 @@
+{
+    "name": "lotfi/lotfi",
+    "autoload": {
+        "psr-4": {
+            "lotfi\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lotfi-Hadjsadok",
+            "email": "83740857+Lotfi-Hadjsadok@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}
